@@ -10,4 +10,4 @@ pip install selenium
 Download the respective webdriver for the browser you like
 ```
 Make the changes as suggested in the code and run it. That's it!
-### 2. Wifi-Bot
+### ![2. Wifi-Bot](https://github.com/laxminagln/AutoBots/blob/master/Wifi-Bot.py)
