@@ -1,5 +1,5 @@
 # AutoBots
-### 1. ![Login-Bot](https://github.com/laxminagln/AutoBot/blob/master/Login-Bot.py)
+### ![1. Login-Bot](https://github.com/laxminagln/AutoBot/blob/master/Login-Bot.py)
 A python based auto login bot for any web site
 - Selenium - Automates real user interactions in Firefox, Safari, Edge, Chrome, Internet Explorer and more
 ```
