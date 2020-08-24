@@ -6,3 +6,5 @@ saved_networks = os.popen('netsh wlan show profiles').read()
 
 available_networks = os.popen('netsh wlan show networks').read()
 #print(available_networks)
+
+preferred_ssid = input('Enter the preferred network name:')
