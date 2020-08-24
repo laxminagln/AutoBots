@@ -14,5 +14,5 @@ Make the changes as suggested in the code and run it. That's it!
 A python based Wifi bot for connecting saved connections (don't expect this to hack ;) )
 - Netsh - Command line scripting utility which allows to display or modify network configurations
 ```
-
+netsh id only supported in Windows. For linux distributions choose iproute2 package
 ```
