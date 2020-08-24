@@ -18,3 +18,7 @@ netsh is only supported in Windows. For linux distributions choose iproute2 pack
 ```
 ### ![3. FB-Bday-Bot](https://github.com/laxminagln/AutoBots/blob/master/FB-Bday-Bot.py)
 A python based bot to wish others for user
+- Xpath - navigate to various elements of the html document
+```
+//name_of_element[@name_of_attribute='value_of_attribute']
+```
