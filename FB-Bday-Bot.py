@@ -30,3 +30,15 @@ browser.get?("https://www.facebook.com/events/birthdays")
 #time.sleep(3)
 
 bday_list = browser.find_elements_by_xpath("//*[@class = 'enter_submit uiTextareaNoResize uiTextareaAutogrow uiStreamInlineTextarea inlineReplyTextArea mentionsTextarea textInput']")
+
+c = 0
+for element in bday_list:
+  element_id = str(element.get_attribute('id'))
+  XPATH = '//*[@id = "' +element_id+ '"]'
+  post = browser.find_element_by_xpath(XPATH)
+  post.send_keys(message)
+  time.sleep(1)
+  #post.send_keys(Keys.RETURN)
+  c = c+1
+  if(c>num):
+    break
