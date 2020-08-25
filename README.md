@@ -23,8 +23,8 @@ A python based bot to wish others for user
 '//name_of_element[@name_of_attribute='value_of_attribute']'
 ```
 ### ![4. OTP-Bomber](https://github.com/laxminagln/AutoBots/blob/master/OTP-Bomber.py)
-A python based bot to continuously send otp (from amaxzon.in)
-Note: This annoys!!!
+A python based bot to continuously send otp (from amazon.in)
+- Note: This annoys!!!
 ```
 browser.find_element_by_link_text()
 ```
