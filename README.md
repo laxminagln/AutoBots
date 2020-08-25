@@ -28,7 +28,7 @@ A python based bot to continuously send otp (from amazon.in)
 ```
 browser.find_element_by_link_text()
 ```
-### ![5. FB-friend-scrapper]()
+### ![5. FB-friend-scrapper](https://github.com/laxminagln/AutoBots/blob/master/FB-friend-scrapper.py)
 ```
 pip install beautifulsoup4
 ```
