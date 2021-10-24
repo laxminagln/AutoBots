@@ -1,25 +1,25 @@
-import pyttsx3                                                  #text to speech
-import datetime                                                 #date and time
-import speech_recognition as sr                                 #speech recognition
-import wikipedia                                                #wikipedia
-import smtplib                                                  #mail
-import webbrowser as wb                                         #web browsing
-import os                                                       #system access
-import pyautogui                                                #screenshot
-import psutil                                                   #CPU and Battery
-import pyjokes                                                  #jokes
+import pyttsx3                                                  # text to speech
+import datetime                                                 # date and time
+import speech_recognition as sr                                 # speech recognition
+import wikipedia                                                # wikipedia
+import smtplib                                                  # mail
+import webbrowser as wb                                         # web browsing
+import os                                                       # system access
+import pyautogui                                                # screenshot
+import psutil                                                   # CPU and Battery
+import pyjokes                                                  # jokes
 
-engine = pyttsx3.init()                                         #variable for converting text to speech
+engine = pyttsx3.init()                                         # variable for converting text to speech
 
-def speak(audio):                                               #function for converting text to speech
+def speak(audio):                                               # function for converting text to speech
     engine.say(audio)
     engine.runAndWait()
     
-def time():                                                     #function for speaking time
+def time():                                                     # function for speaking time
     Time = datetime.datetime.now().strftime("%I:%M:%S")
     speak(Time)
 
-def date():                                                     #function for speaking date
+def date():                                                     # function for speaking date
     year = int(datetime.datetime.now().year)
     month = int(datetime.datetime.now().month)
     date = int(datetime.datetime.now().day)
@@ -27,7 +27,7 @@ def date():                                                     #function for sp
     speak(month)
     speak(year)
     
-def wishme(n):                                                  #function for wishing the user
+def wishme(n):                                                  # function for wishing the user
     speak("Welcome back " + n)
     speak("It's")
     time()
@@ -42,7 +42,7 @@ def wishme(n):                                                  #function for wi
     elif hour >=18 and hour<=24:
         speak("Good night nag!")
 
-def takeCommand():                                              #function for accepting commands
+def takeCommand():                                              # function for accepting commands
     r = sr.Recognizer()
     with sr.Microphone() as source:
         print("Listening..")
@@ -58,7 +58,7 @@ def takeCommand():                                              #function for ac
         return "None"
     return query
 
-def sendEmail(to, content):                                     #function for sending mail
+def sendEmail(to, content):                                     # function for sending mail
     server = smtplib.SMTP('smtp.gmail.com', 587)
     server.eclo()
     server.starttls()
@@ -66,17 +66,17 @@ def sendEmail(to, content):                                     #function for se
     server.sendmail('laxminagln@gmail.com', to, content)
     server.close()
 
-def screenshot():                                               #function for taking screenshot
+def screenshot():                                               # function for taking screenshot
     img = pyautogui.screenshot()
     img.save('file path with file name and extension')
     
-def cpu():                                                      #function for speaking CPU stats
+def cpu():                                                      # function for speaking CPU stats
     usage = str(psutil.cpu_percent())
     speak("c p u is at " + usage)
     battery = psutil.sensors_battery()
     speak("Battery is at " + battery.percent)
 
-def jokes():                                                    #function for telling jokes
+def jokes():                                                    # function for telling jokes
     speak(pyjokes.get_joke())
 
 if __name__ == "__main__":
