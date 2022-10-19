@@ -1,4 +1,4 @@
-from selenium import webdriver                            # importing libraries
+from selenium import webdriver    """selenium package"""                        # importing libraries
 
 browser = webdriver.Chrome('path to driver')              # give path to your chrome driver
 
